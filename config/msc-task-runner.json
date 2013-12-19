@@ -15,7 +15,9 @@
     },
 
     "options": {
-        "timer": "2"
+        "timer": "2",
+        "project": "Multi Service Fuel Card"
+        "group": "msfleet"
     },
 
     "commands": {

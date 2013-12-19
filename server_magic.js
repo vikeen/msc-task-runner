@@ -102,6 +102,6 @@ var fs    = require('fs'),
 
   config = JSON.parse(fs.readFileSync('./config/msc-task-runner.json'), 'utf8');
   monitor(config);
-  exec('newgrp msfleet', serverTask );
+  exec('newgrp ' + config.options.group, serverTask );
   exec(config.commands.server_start, serverTask);
   spawnTask();
